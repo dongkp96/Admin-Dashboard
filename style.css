@@ -8,11 +8,13 @@ a{
     text-decoration: none;
     color:white;
 }
+
 .container{
     background-color:black;
     display:grid;
     grid-template-columns:1fr 4fr;
-    grid-template-rows:1fr 5fr;
+    grid-template-rows:1fr 4fr;
+    height:80vh;
 }
 
 /*******
@@ -35,7 +37,7 @@ Side bar Section
 }
 
 .dashboard > a{
-    font-size:35px;
+    font-size:30px;
     margin-top:10px;
 }
 
@@ -45,7 +47,7 @@ li>img{
 }
 
 li{
-    font-size:30px;
+    font-size:25px;
     margin-top:10px;
     display:flex;
 }
@@ -76,6 +78,9 @@ Header section
     align-self:center;
 }
 
+.search{
+    display:flex;
+}
 .icons{
     /*Same thing to the icons*/
     display:flex;
@@ -149,4 +154,30 @@ input[type="search"]{
 .main{
     background-color:lightslategray;
     grid-row:2 / 3;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap:20px;
+    width:80%;
+}
+
+.card{
+    height:200px;
+    width:200px;
+    background-color:white;
+    border-radius:15px;
+    justify-content:center;
 }
